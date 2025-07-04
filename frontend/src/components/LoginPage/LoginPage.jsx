@@ -1,6 +1,6 @@
     import React from 'react'
     import "./LoginPage.css"
-    const LoginPage = () => {
+    const LoginPage = ({ onLogin }) => {
     return (
         <div className='loginpage'>
         <div className='login-page-card'>
@@ -17,7 +17,7 @@
             <h2>USER LOGIN</h2>
             <input type="text" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <button>LOGIN</button>
+            <button onClick={onLogin}>Login</button>
             <p>Don't have an account? <a href="#">Sign Up</a></p>
             </div>
         </div>

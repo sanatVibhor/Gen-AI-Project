@@ -2,17 +2,21 @@ import { useState } from 'react'
 import './App.css'
 import LoginPage from './components/LoginPage/LoginPage'
 import Footer from './components/Footer/Footer'
+import DashboardPage from './components/DashboardPage/DashboardPage'
 function App() {
-  const [count, setCount] = useState(0)
+  const[loggedIn,setloggedIn]=useState(false);
 
   return (
     <>
       <div  className="app-container" >
-       <LoginPage/>
+        {loggedIn ? (
+           <DashboardPage />
+        ) :(
+          <LoginPage onLogin={() => setloggedIn(true)} />
+        )}   
        <Footer/>
        </div>
     </>
   )
 }
-
 export default App

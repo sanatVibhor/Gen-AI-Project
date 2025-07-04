@@ -1,0 +1,27 @@
+.dashboard {
+    padding: 40px;
+    min-height: 80vh;
+    font-family: sans-serif;
+  }
+  
+  .card-container {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35vh;
+  }
+  
+  .project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 250px;
+    transition: 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
