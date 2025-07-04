@@ -1,0 +1,16 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This pushes the footer to the bottom */
+.app-container > *:first-child {
+  flex: 1;
+}
