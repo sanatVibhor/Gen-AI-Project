@@ -10,5 +10,19 @@ Whether you're a developer, researcher, or enthusiast, this repository provides 
 
 ---
 
+backend/
+├── controllers/
+│   └── authController.js     # Business logic for signup/login
+├── routes/
+│   └── authRoutes.js         # API endpoint definitions
+├── models/
+│   └── userModel.js          # Optional: user-related DB logic (for cleaner controller)
+├── utils/
+│   └── validation.js         # Input validation (Joi/Zod)
+├── config/
+│   └── db.js                 # PostgreSQL connection pool
+├── .env                      # Environment variables (DB credentials)
+├── index.js                  # Entry point (Express server)
+├── package.json              # Dependencies and scripts
 
 
