@@ -1,25 +1,31 @@
-.ai-fullscreen {
-    min-height: 100vh;
-    background-color: white;  /* ✅ Full white background */
-    padding: 40px;            /* ✅ Margin from all sides */
+/* Fullscreen white background */
+.ai-background {
+  margin-top: 25px;
+    width: 1371px;
+    min-height: 80vh;
+    background-color: white;
+    padding: 4px;
+    box-sizing: border-box; 
     font-family: sans-serif;
+    position: relative;
   }
   
+  /* Top-left back button inside white screen */
   .back-button {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
     border: none;
     padding: 10px 16px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: background 0.2s ease;
   }
   
-  .back-button:hover {
-    background-color: #e0e0e0;
+  /* Optional inner content styling */
+  .ai-content {
+    margin-top: 80px; /* So it's not hidden behind the back button */
   }
   

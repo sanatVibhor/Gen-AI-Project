@@ -3,10 +3,12 @@ import './AI.css';
 
 const AI = ({ onBack }) => {
   return (
-    <div className="ai-fullscreen">
+    <div className="ai-background">
       <button className="back-button" onClick={onBack}>← Back</button>
-      <h1>This is from AI</h1>
-      <p>Project description or features can go here.</p>
+      <div className="ai-content">
+        <h1>This is from AI</h1>
+        <p>Your project details go here.</p>
+      </div>
     </div>
   );
 };
